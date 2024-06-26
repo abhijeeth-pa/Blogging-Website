@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>WriteBlogServlet</servlet-name>
+    <servlet-class>servlet.WriteBlogServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WriteBlogServlet</servlet-name>
+    <url-pattern>/WriteBlogServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewBlogServlet</servlet-name>
+    <servlet-class>servlet.ViewBlogServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewBlogServlet</servlet-name>
+    <url-pattern>/ViewBlogServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewAllBlogsServlet</servlet-name>
+    <servlet-class>servlet.ViewAllBlogsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewAllBlogsServlet</servlet-name>
+    <url-pattern>/ViewAllBlogsServlet</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+
+  <welcome-file-list>
+    <welcome-file>viewAllBlogs.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
